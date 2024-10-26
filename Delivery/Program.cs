@@ -40,6 +40,7 @@ catch (Exception exception)
     Console.WriteLine(exception.Message);
     Log.Logger.Error(exception.Message);
     Console.ReadLine();
+    Environment.Exit(0);
 }
 
 List<Order> orders = new ();
@@ -56,6 +57,7 @@ using (var csv = new CsvReader(sReader, CultureInfo.InvariantCulture))
         Console.WriteLine(exception.Message);
         Log.Logger.Error(exception.Message);
         Console.ReadLine();
+        Environment.Exit(0);
     }
 }
 
@@ -72,9 +74,10 @@ try
 }
 catch (Exception exception)
 {
-    //Console.WriteLine(exception.Message);
+    Console.WriteLine(exception.Message);
     Log.Logger.Error(exception.Message);
     Console.ReadLine();
+    Environment.Exit(0);
 }
 
 /* Дата с НАЧАЛО */
