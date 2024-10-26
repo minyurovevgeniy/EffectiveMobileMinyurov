@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "p+gqfLxMN04=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MinyurovEvgeniy\\Documents\\DeveloperWindows\\EffectiveMinyurov\\Delivery\\Delivery.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\log4net\\3.0.2\\log4net.3.0.2.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.2\\microsoft.extensions.configuration.binder.8.0.2.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1\\microsoft.extensions.logging.8.0.1.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\microsoft.extensions.logging.configuration\\8.0.1\\microsoft.extensions.logging.configuration.8.0.1.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\microsoft.extensions.logging.console\\8.0.1\\microsoft.extensions.logging.console.8.0.1.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\8.0.0\\microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\serilog\\4.1.0\\serilog.4.1.0.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\serilog.extensions.logging\\8.0.0\\serilog.extensions.logging.8.0.0.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\serilog.sinks.console\\6.0.0\\serilog.sinks.console.6.0.0.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\serilog.sinks.file\\6.0.0\\serilog.sinks.file.6.0.0.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\system.configuration.configurationmanager\\4.5.0\\system.configuration.configurationmanager.4.5.0.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
+    "C:\\Users\\MinyurovEvgeniy\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
