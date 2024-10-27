@@ -32,13 +32,6 @@ try
 {
     sReader = new StreamReader("../../../Delivery.txt");
 }
-catch (System.IO.FileNotFoundException fileNotFoundException)
-{
-    Console.WriteLine(fileNotFoundException.Message);
-    Log.Logger.Error(fileNotFoundException.Message);
-    Console.WriteLine(pressEnter);
-    Console.ReadLine();
-}
 catch (Exception exception)
 {
     Console.WriteLine(exception.Message);
