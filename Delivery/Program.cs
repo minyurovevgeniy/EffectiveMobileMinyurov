@@ -5,12 +5,17 @@ using System.Globalization;
 
 const string pressEnter = "Для завершения работы нажмите Enter";
 
-string loggerFile = "";
+string loggerFile = "_deliveryLog";
 
 try
 {
     Console.Write("Введите название файла с логами без расширения txt: ");
     loggerFile = Console.ReadLine();
+    int noSpacesLoggerFileNameLength = loggerFile.Replace(" ","").Length;
+    if (loggerFile.Equals("") || noSpacesLoggerFileNameLength < 1)
+    {
+        loggerFile = "_deliveryLog";
+    }
 }
 catch (Exception exception)
 {
@@ -60,16 +65,16 @@ using (var csv = new CsvReader(sReader, CultureInfo.InvariantCulture))
     }
 }
 
-int districtInput = 0;
-DateTime deliveryTimeStart = DateTime.Now;
+int _cityDistrict = 0;
+DateTime _firstDeliveryDateTime = DateTime.Now;
 DateTime deliveryTimeEnd = DateTime.Now;
 DateTime deliveryTimeEnd30MinutesLater = deliveryTimeEnd.AddMinutes(30);
 
 try
 {
     Console.Write("Введите номер района: ");
-    districtInput = Int32.Parse(Console.ReadLine());
-    Log.Logger.Information("Введен номер района: "+ districtInput);
+    _cityDistrict = Int32.Parse(Console.ReadLine());
+    Log.Logger.Information("Введен номер района: "+ _cityDistrict);
 }
 catch (Exception exception)
 {
@@ -84,10 +89,10 @@ catch (Exception exception)
 try
 {
     Console.Write("Введите время первой доставки: ");
-    deliveryTimeStart = DateTime.Parse(Console.ReadLine());
+    _firstDeliveryDateTime = DateTime.Parse(Console.ReadLine());
 
-    Log.Logger.Information("Введено время первой доставки: " + deliveryTimeStart);
-    deliveryTimeEnd30MinutesLater = deliveryTimeStart.AddMinutes(30);
+    Log.Logger.Information("Введено время первой доставки: " + _firstDeliveryDateTime);
+    deliveryTimeEnd30MinutesLater = _firstDeliveryDateTime.AddMinutes(30);
 }
 catch (Exception exception)
 {
@@ -102,8 +107,8 @@ catch (Exception exception)
 
 // Фильтрация за первые 30 минут после первого заказа
 var ordersFiltered30 = from o in orders
-                       where o.District == districtInput
-                       && o.DeliveryTime >= deliveryTimeStart && o.DeliveryTime <= deliveryTimeEnd30MinutesLater
+                       where o.District == _cityDistrict
+                       && o.DeliveryTime >= _firstDeliveryDateTime && o.DeliveryTime <= deliveryTimeEnd30MinutesLater
                        select o;
 
 foreach (Order order in ordersFiltered30)
@@ -116,11 +121,17 @@ foreach (Order order in ordersFiltered30)
 }
 
 Console.Write("Введите название файла с отфильтрованными заказами без расширения txt: ");
-string deliveryFile = "";
+string deliveryFile = "_deliveryOrder";
 
 try
 {
     deliveryFile = Console.ReadLine();
+
+    int noSpacesOutputFileNameLength = deliveryFile.Replace(" ", "").Length;
+    if (deliveryFile.Equals("") || noSpacesOutputFileNameLength < 1)
+    {
+        deliveryFile = "_deliveryOrder";
+    }
 }
 catch (Exception exception)
 {

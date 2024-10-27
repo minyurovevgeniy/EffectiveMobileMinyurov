@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{E2F2F277-F0D9-423C-930C-54784D1AD492}|Delivery\\Delivery.csproj|solutionrelative:delivery\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E2F2F277-F0D9-423C-930C-54784D1AD492}|Delivery\\Delivery.csproj|c:\\users\\minyurovevgeniy\\documents\\developerwindows\\effectiveminyurov\\delivery\\correctdelivery.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E2F2F277-F0D9-423C-930C-54784D1AD492}|Delivery\\Delivery.csproj|solutionrelative:delivery\\correctdelivery.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E2F2F277-F0D9-423C-930C-54784D1AD492}|Delivery\\Delivery.csproj|c:\\users\\minyurovevgeniy\\documents\\developerwindows\\effectiveminyurov\\delivery\\delivery.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{E2F2F277-F0D9-423C-930C-54784D1AD492}|Delivery\\Delivery.csproj|solutionrelative:delivery\\delivery.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 256,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,6 +35,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "correctDelivery.txt",
+              "DocumentMoniker": "C:\\Users\\MinyurovEvgeniy\\Documents\\DeveloperWindows\\EffectiveMinyurov\\Delivery\\correctDelivery.txt",
+              "RelativeDocumentMoniker": "Delivery\\correctDelivery.txt",
+              "ToolTip": "C:\\Users\\MinyurovEvgeniy\\Documents\\DeveloperWindows\\EffectiveMinyurov\\Delivery\\correctDelivery.txt",
+              "RelativeToolTip": "Delivery\\correctDelivery.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-27T16:19:41.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Delivery.txt",
               "DocumentMoniker": "C:\\Users\\MinyurovEvgeniy\\Documents\\DeveloperWindows\\EffectiveMinyurov\\Delivery\\Delivery.txt",
               "RelativeDocumentMoniker": "Delivery\\Delivery.txt",
@@ -38,11 +55,12 @@
               "RelativeToolTip": "Delivery\\Delivery.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-26T16:49:14.518Z"
+              "WhenOpened": "2024-10-26T16:49:14.518Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UnitTest.cs",
               "DocumentMoniker": "C:\\Users\\MinyurovEvgeniy\\Documents\\DeveloperWindows\\EffectiveMinyurov\\DeliveryTest\\UnitTest.cs",
               "RelativeDocumentMoniker": "DeliveryTest\\UnitTest.cs",
@@ -60,7 +78,7 @@
               "RelativeDocumentMoniker": "Delivery\\Program.cs",
               "ToolTip": "C:\\Users\\MinyurovEvgeniy\\Documents\\DeveloperWindows\\EffectiveMinyurov\\Delivery\\Program.cs",
               "RelativeToolTip": "Delivery\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T11:55:57.678Z",
               "EditorCaption": ""
