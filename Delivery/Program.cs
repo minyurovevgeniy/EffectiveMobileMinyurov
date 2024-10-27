@@ -3,6 +3,8 @@ using EffectiveMinyurov;
 using Serilog;
 using System.Globalization;
 
+const string pressEnter = "Для завершения работы нажмите Enter";
+
 string loggerFile = "";
 
 try
@@ -14,6 +16,7 @@ catch (Exception exception)
 {
     Console.WriteLine(exception.Message);
     Log.Logger.Error(exception.Message);
+    Console.WriteLine(pressEnter);
     Console.ReadLine();
     Environment.Exit(0);
 }
@@ -22,7 +25,7 @@ Log.Logger = new LoggerConfiguration().
     WriteTo.File("../../../" + loggerFile + ".txt",
     outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
     .CreateLogger();
-Log.Information("\r\nLogger was initialized");
+Log.Information("\r\nЛоггирование запущено");
 
 StreamReader sReader = null;
 try
@@ -33,12 +36,14 @@ catch (System.IO.FileNotFoundException fileNotFoundException)
 {
     Console.WriteLine(fileNotFoundException.Message);
     Log.Logger.Error(fileNotFoundException.Message);
+    Console.WriteLine(pressEnter);
     Console.ReadLine();
 }
 catch (Exception exception)
 {
     Console.WriteLine(exception.Message);
     Log.Logger.Error(exception.Message);
+    Console.WriteLine(pressEnter);
     Console.ReadLine();
     Environment.Exit(0);
 }
@@ -56,6 +61,7 @@ using (var csv = new CsvReader(sReader, CultureInfo.InvariantCulture))
     {
         Console.WriteLine(exception.Message);
         Log.Logger.Error(exception.Message);
+        Console.WriteLine(pressEnter);
         Console.ReadLine();
         Environment.Exit(0);
     }
@@ -70,12 +76,13 @@ try
 {
     Console.Write("Введите номер района: ");
     districtInput = Int32.Parse(Console.ReadLine());
-    Log.Logger.Information("Номер района: "+ districtInput);
+    Log.Logger.Information("Введен номер района: "+ districtInput);
 }
 catch (Exception exception)
 {
     Console.WriteLine(exception.Message);
     Log.Logger.Error(exception.Message);
+    Console.WriteLine(pressEnter);
     Console.ReadLine();
     Environment.Exit(0);
 }
@@ -86,13 +93,14 @@ try
     Console.Write("Введите время первой доставки: ");
     deliveryTimeStart = DateTime.Parse(Console.ReadLine());
 
-    Log.Logger.Information("Время первой доставки: " + deliveryTimeStart);
+    Log.Logger.Information("Введено время первой доставки: " + deliveryTimeStart);
     deliveryTimeEnd30MinutesLater = deliveryTimeStart.AddMinutes(30);
 }
 catch (Exception exception)
 {
     Console.WriteLine(exception.Message);
     Log.Logger.Error(exception.Message);
+    Console.WriteLine(pressEnter);
     Console.ReadLine();
     Environment.Exit(0);
 }
@@ -125,26 +133,31 @@ catch (Exception exception)
 {
     Console.WriteLine(exception.Message);
     Log.Logger.Error(exception.Message);
+    Console.WriteLine(pressEnter);
     Console.ReadLine();
     Environment.Exit(0);
 }
 
-if (deliveryFile != null && !deliveryFile.Equals(""))
+try
 {
     using (StreamWriter writer = new StreamWriter("../../../" + deliveryFile + ".txt", false))
     {
         foreach (Order order in ordersFiltered30)
         {
-            writer.WriteLine(order.Id + ";" + order.Weight + ";" + order.District + ";" + order.DeliveryTime.ToString("yyyy-MM-dd HH:mm:ss"));
+            writer.WriteLine(order.Id + "," + order.Weight + "," + order.District + "," + order.DeliveryTime.ToString("yyyy-MM-dd HH:mm:ss"));
         }
     }
     Log.Logger.Information("Выходной файл создан");
+    Console.WriteLine("Выходной файл создан");
 }
-else
+catch (Exception exception)
 {
-    Log.Logger.Error("Отсутствует имя выходного файла");
+    Console.WriteLine(exception.Message);
+    Log.Logger.Error(exception.Message);
+    Console.WriteLine(pressEnter);
     Console.ReadLine();
+    Environment.Exit(0);
 }
 
-Console.WriteLine("Для завершения работы нажмите Enter");
+Console.WriteLine(pressEnter);
 Console.ReadLine();
