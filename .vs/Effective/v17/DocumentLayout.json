@@ -40,10 +40,9 @@
               "RelativeDocumentMoniker": "Delivery\\correctDelivery.txt",
               "ToolTip": "C:\\Users\\MinyurovEvgeniy\\Documents\\DeveloperWindows\\EffectiveMinyurov\\Delivery\\correctDelivery.txt",
               "RelativeToolTip": "Delivery\\correctDelivery.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-27T16:19:41.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T16:19:41.222Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "Delivery\\Delivery.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-26T16:49:14.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T16:49:14.518Z"
             },
             {
               "$type": "Document",
@@ -78,7 +76,7 @@
               "RelativeDocumentMoniker": "Delivery\\Program.cs",
               "ToolTip": "C:\\Users\\MinyurovEvgeniy\\Documents\\DeveloperWindows\\EffectiveMinyurov\\Delivery\\Program.cs",
               "RelativeToolTip": "Delivery\\Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAAAI8AAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T11:55:57.678Z",
               "EditorCaption": ""

@@ -25,7 +25,7 @@ catch (Exception exception)
     Console.ReadLine();
     Environment.Exit(0);
 }
-
+Console.WriteLine("Будет создан файл с логами под именем " + loggerFile + ".txt");
 Log.Logger = new LoggerConfiguration().
     WriteTo.File("../../../" + loggerFile + ".txt",
     outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
@@ -141,7 +141,7 @@ catch (Exception exception)
     Console.ReadLine();
     Environment.Exit(0);
 }
-
+Console.WriteLine("Будет создан файл с отфильтрованными заказами под именем " + deliveryFile + ".txt");
 try
 {
     using (StreamWriter writer = new StreamWriter("../../../" + deliveryFile + ".txt", false))
