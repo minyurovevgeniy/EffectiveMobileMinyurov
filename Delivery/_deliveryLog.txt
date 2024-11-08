@@ -26,3 +26,25 @@ IParser state:
 1,1,1,2024-10-21 132:00:00
 
 
+2024-11-09 03:10:50.421 +05:00 [INF] 
+Логгирование запущено
+2024-11-09 03:10:50.598 +05:00 [ERR] The conversion cannot be performed.
+    Text: '2024-10-21 132:00:00'
+    MemberName: 
+    MemberType: 
+    TypeConverter: 'CsvHelper.TypeConversion.DateTimeConverter'
+IReader state:
+   ColumnCount: 4
+   CurrentIndex: 3
+   HeaderRecord:
+["_id","_weight","_district","_deliveryTime"]
+IParser state:
+   ByteCount: 0
+   CharCount: 65
+   Row: 2
+   RawRow: 2
+   Count: 4
+   RawRecord:
+1,1,1,2024-10-21 132:00:00
+
+
